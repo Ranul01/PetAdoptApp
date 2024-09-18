@@ -24,7 +24,7 @@ export default function Slider() {
     //         console.log(doc.data())
     //         setSilerList(sliderList => [...sliderList, doc.data()])
     //     })
-    //}
+    // }
     return (
         <View style={{
             marginTop: 15
@@ -41,6 +41,14 @@ export default function Slider() {
                     </View>
 
                 )}
+            // renderItem={({ item, index }) => (
+            //     <View>
+            //         <Image source={{ uri: item?.imageUrl }}
+            //             style={styles?.sliderImage}
+            //         />
+            //     </View>
+
+            // )}
             />
         </View>
     )
