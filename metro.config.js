@@ -1,6 +1,14 @@
-const { getDefaultConfig } = require('@expo/metro-config');
+const { getDefaultConfig } = require('expo/metro-config');
+const { mergeConfig } = require('@react-native/metro-config');
 
-const defaultConfig = getDefaultConfig(__dirname);
-defaultConfig.resolver.sourceExts.push('cjs');
+const config = {
+    resolver: {
+        requireCycleIgnorePatterns: [
+            /node_modules\/@firebase\/firestore\/.*/,
+            /node_modules\/@grpc\/grpc-js\/.*/,
+            /node_modules\/protobufjs\/.*/,
+        ],
+    },
+};
 
-module.exports = defaultConfig;
+module.exports = mergeConfig(getDefaultConfig(__dirname), config);

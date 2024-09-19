@@ -38,7 +38,7 @@ export default function LoginScreen() {
                     width: '100%',
                     borderRadius: 14
                 }}
-                    onPress={() => router.push('/home')}
+                    onPress={() => router.push('/(tabs)/home')}
                 >
                     <Text style={{
                         fontFamily: 'outfit-medium',
