@@ -21,7 +21,7 @@ export default function PetDetails() {
     })
 
     return (
-        <View>
+        <View style={{ height: '100vh' }}>
             <ScrollView>
                 {/* pet info */}
                 <PetInfo pet={pet} />

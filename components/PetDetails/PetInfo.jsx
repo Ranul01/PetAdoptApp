@@ -2,6 +2,7 @@ import { View, Text, Image } from 'react-native'
 import React from 'react'
 import Colors from '../../constants/Colors'
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { TouchableOpacity } from 'react-native';
 
 export default function PetInfo({ pet }) {
     return (
@@ -34,8 +35,11 @@ export default function PetInfo({ pet }) {
                         color: Colors.GRAY
                     }}>{pet?.address}</Text>
                 </View>
-
-                <Ionicons name="heart-outline" size={24} color="black" />
+                <Ionicons
+                    name='heart-outline'
+                    size={24}
+                    color='black'
+                />
             </View>
         </View>
     )

@@ -1,10 +1,11 @@
-import { View, Text } from 'react-native'
+import { View, Text, FlatList } from 'react-native'
 import React from 'react'
+import PetInfo from '../../components/PetDetails/PetInfo'
 
-export default function Favourite() {
+export default function Favourite({ favourites }) {
     return (
         <View>
-            <Text>Favourite</Text>
+            <Text>Favorites</Text>
         </View>
     )
 }

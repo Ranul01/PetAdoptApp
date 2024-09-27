@@ -4,6 +4,7 @@ import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from 'firebase/firestore'
 import { firebase } from '@react-native-firebase/app';
 import firestore from '@react-native-firebase/firestore';
+import { getStorage } from "firebase/storage";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -23,5 +24,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 export const db = getFirestore(app)
+export const storage = getStorage(app)
 //export const db = firestore();
 // const analytics = getAnalytics(app);
